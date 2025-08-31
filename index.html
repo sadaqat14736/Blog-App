@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp &LogIn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <main>
+  <!-- Login Section -->
+  <section class="login active">
+    <h1>Login Form</h1>
+    <div class="switch">
+      <button onclick="showForm('login')">Login</button>
+      <button onclick="showForm('signup')">Signup</button>
+    </div>
+    <input type="email" placeholder="Email" id="login-email">
+    <input type="password" placeholder="Password" id="login-password">
+    <button class="log" onclick="login()">Login</button>
+    <p>Not a member? <span onclick="showForm('signup')" style="cursor:pointer;color:blue;">Signup now</span></p>
+  </section>
+
+  <!-- Signup Section -->
+  <section class="signup">
+    <h1>SignUp Form</h1>
+    <div class="switch">
+      <button onclick="showForm('login')">Login</button>
+      <button onclick="showForm('signup')">Signup</button>
+    </div>
+    <input type="email" placeholder="Email" id="signup-email">
+    <input type="password" placeholder="Password" id="signup-password">
+    <button class="log" onclick="signUP()">Signup</button>
+  </section>
+</main>
+    <script> alert("✨ Welcome! To my blog App");
+</script>
+</body>
+<script src="./script.js"></script>
+</html>

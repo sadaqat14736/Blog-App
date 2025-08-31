@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog app</title>
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+     <section class="header">
+  <div class="logo">BLOG APP</div>
+  <nav class="nav-links">
+    <a href="#">Post</a>
+    <a href="./index.html">Login</a>
+    <a href="./index.html">Signup</a>
+  </nav>
+  <button onclick="logout()"  class="logout-btn">Logout</button>
+</section>
+
+    
+
+  <section class="post-section">
+    <h2>Create a New Post</h2>
+
+    <div class="form-group">
+      <label for="title">Post Title</label>
+      <input type="text" id="title" placeholder="Enter your post title">
+    </div>
+
+    <div class="form-group">
+      <label for="contnt">Content</label>
+      <textarea id="contnt" placeholder="Write your post here..."></textarea>
+    </div>
+
+    <button class="save-btn" onclick="savePost()">Save Post</button>
+  </section>
+  
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+    
+
+  <div id="posts-container"></div>
+<script>  alert("✨ Welcome! Enjoy your time on the blog.");</script>
+</body>
+<script src="./script.js">
+
+</script>
+</html>
